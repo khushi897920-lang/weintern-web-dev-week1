@@ -11,7 +11,7 @@
 
 ## 🔗 Live Demo & Preview
 
-👉 **Live Demo:** [https://weintern-web-dev-week1.vercel.app](https://weintern-web-dev-week1.vercel.app)
+👉 **Live Demo:** [https://business-landing-page-lovat.vercel.app](https://business-landing-page-lovat.vercel.app)
 
 📸 **Project Screenshots:**
 
@@ -42,7 +42,7 @@ NexaStudio is a fictional digital agency landing page built as part of the **WeI
 | 🌙 Dark Theme | Deep navy + emerald color palette | ✅ |
 | 🔄 Smooth Scroll | JS-powered anchor navigation | ✅ |
 | 🍔 Hamburger Menu | Mobile nav toggle | ✅ |
-| 👁️ Scroll Animations | IntersectionObserver fade-in | ✅ |
+| 🍔 Scroll Animations | IntersectionObserver fade-in | ✅ |
 | ⚡ Zero Dependencies | No Bootstrap, No Tailwind, No CDN | ✅ |
 
 ---
@@ -101,16 +101,18 @@ business-landing-page/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/khushi897920-lang/weintern-web-dev-week1.git
+   git clone https://github.com/khushi897920-lang/business-landing-page.git
    ```
-2. **Navigate to the project folder:**
+2. **Navigate to the project directory:**
    ```bash
-   cd weintern-web-dev-week1/business-landing-page
+   cd business-landing-page
    ```
 3. **Open in browser:**
-   - **Option A:** Double-click `index.html` to run locally.
-   - **Option B:** Use Live Server extension in VS Code.
-4. **For screenshots:** Open DevTools → `Ctrl+Shift+M` for mobile view.
+   - **Option A:** Simply double-click the `index.html` file to run locally.
+   - **Option B:** Right-click `index.html` inside VS Code and choose **"Open with Live Server"**.
+4. **For mobile screenshots & previewing:**
+   - Open browser **DevTools** (F12 or Right-click -> Inspect).
+   - Toggle Device Toolbar using `Ctrl + Shift + M` to test responsiveness.
 
 ---
 
@@ -142,12 +144,12 @@ business-landing-page/
 | 🎓 Education | BCA Semester IV, HCPG Varanasi |
 | 💼 Internship | WeIntern Pvt Ltd |
 | 🐙 GitHub | [github.com/khushi897920-lang](https://github.com/khushi897920-lang) |
-| 💼 LinkedIn | [linkedin.com/in/khushi-897920](#) |
+| 💼 LinkedIn | [linkedin.com/in/khushi-897920](https://linkedin.com/in/khushi-897920) |
 
 ---
 
 ## 🤝 Acknowledgements
 
-- **WeIntern Pvt Ltd** for the structured internship program.
-- **Google Fonts** for Space Mono and DM Sans.
-- Special thanks to the open-source community for layout tools and design badges.
+- **WeIntern Pvt Ltd** for providing this structured internship task and guidance.
+- **Google Fonts** for the typography pairing of Space Mono and DM Sans.
+- Special thanks to the open-source community for providing standard tools to format layouts and assets.
