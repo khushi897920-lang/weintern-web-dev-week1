@@ -1,0 +1,19 @@
+/* NexaStudio Landing Page Styles */
+:root {
+  --bg: #0B1120;
+  --accent: #10B981;
+  --text: #F8FAFC;
+  --text-muted: #94A3B8;
+  --card: #1E293B;
+  --accent-dim: rgba(16,185,129,0.12);
+  --accent-glow: rgba(16,185,129,0.30);
+  --border: rgba(16,185,129,0.18);
+  --font-display: 'Space Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
