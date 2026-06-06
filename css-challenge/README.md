@@ -11,7 +11,7 @@ A pixel-perfect, highly premium CSS challenge built with pure HTML, CSS & JavaSc
 
 ## 🔗 Live Demo & Screenshots
 
-🔗 **Live Demo:** [Click here to view the live project](https://weintern-css-challenge.vercel.app) *(placeholder)*
+🔗 **Live Demo:** [Click here to view the live project](https://css-challenge-lake.vercel.app)
 
 | Desktop View | Mobile View |
 |---|---|
