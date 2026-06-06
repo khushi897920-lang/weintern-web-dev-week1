@@ -157,13 +157,13 @@ const ScrollManager = {
 // ── SUBMISSION MODAL MANAGER ──
 const SubmissionModal = {
     init() {
-        const submitBtn = document.getElementById('submit-btn') || document.querySelector('header nav .btn-primary');
-        if (!submitBtn) return;
-
-        submitBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            AudioSynth.playClick();
-            this.show();
+        const submitBtns = document.querySelectorAll('#submit-btn, #submit-btn-mobile, header nav .btn-primary');
+        submitBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                AudioSynth.playClick();
+                this.show();
+            });
         });
     },
 

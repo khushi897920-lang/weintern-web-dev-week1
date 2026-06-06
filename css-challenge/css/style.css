@@ -596,6 +596,11 @@ footer {
   font-size: 14px;
 }
 
+/* Hide mobile-specific submit button by default on desktop */
+.mobile-submit {
+  display: none;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   /* Navbar adjustments */
@@ -608,34 +613,51 @@ footer {
     margin-left: 12px;
   }
 
+  /* Desktop submit button is hidden in nav on mobile to prevent overlapping */
+  #submit-btn {
+    display: none !important;
+  }
+
+  /* Navigation drawer menu formatting */
   .nav-links {
-    display: none; /* Hide default menu */
+    display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
     position: absolute;
     top: 80px;
     left: 0;
     width: 100%;
     background-color: var(--surface);
     border-bottom: 1px solid var(--outline);
-    padding: 16px var(--spacing-margin-mobile) 24px var(--spacing-margin-mobile);
+    padding: 24px var(--spacing-margin-mobile);
     box-shadow: var(--shadow-airbnb);
-    gap: 16px;
+    gap: 20px;
     box-sizing: border-box;
   }
   
   .nav-links.open {
-    display: flex; /* Open navigation panel */
+    display: flex;
   }
 
-  .btn-primary {
-    padding: 8px 16px; /* Slightly tighter on mobile to avoid overflow */
-    font-size: 13px;
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Show submit button inside links drawer on mobile */
+  .mobile-submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 8px;
   }
 
   /* Section Padding */
   section {
-    padding: 32px var(--spacing-margin-mobile);
+    padding: 40px var(--spacing-margin-mobile);
   }
 
   .hero {
@@ -643,7 +665,8 @@ footer {
   }
   
   .hero h1 {
-    font-size: 28px;
+    font-size: calc(24px + 1vw);
+    line-height: 1.3;
   }
 
   /* Flexbox stacked full width */
@@ -655,9 +678,10 @@ footer {
   .testimonial-card {
     width: 100%;
     min-width: 100%;
+    padding: 24px;
   }
 
-  /* Grid: 2 columns on Tablet, 1 column on Mobile */
+  /* Grid: 2 columns on Tablet */
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-margin-mobile);
