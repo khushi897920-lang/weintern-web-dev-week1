@@ -1,21 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="custom-scrollbar">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSS Challenge | WeIntern Week 1</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEINTERN | Airbnb Style Design</title>
+  <!-- Google Fonts Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <!-- Vanilla JS Script -->
+  <script src="js/script.js?v=3" defer></script>
 </head>
 <body>
-  <!-- Part A: Flexbox Layout -->
-  <section id="flexbox-challenge">
-  </section>
-  <!-- Part B: Grid Layout -->
-  <section id="grid-challenge">
-  </section>
-  <!-- Part C: Animation -->
-  <section id="animation-challenge">
-  </section>
-  <script src="js/script.js"></script>
+
+  <!-- Top Navigation Bar -->
+  <header>
+    <nav>
+      <a href="#" class="logo">WEINTERN</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#flexbox">Flexbox</a>
+        <a class="nav-link" href="#grid">Grid</a>
+        <a class="nav-link" href="#animation">Animation</a>
+        <a class="nav-link" href="#">Docs</a>
+      </div>
+      <button class="btn-primary" id="submit-btn">Submit Assignment</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Advanced CSS Architecture</h1>
+        <p>Mastering modern layout engines and micro-animations for high-performance developer interfaces.</p>
+      </div>
+    </section>
+
+    <!-- Section 1: Flexbox -->
+    <section id="flexbox">
+      <div class="section-header">
+        <span class="section-tag">// part-a</span>
+        <h2>Flexbox Testimonials</h2>
+        <p>Responsive testimonial row — 3 cards desktop, stacked mobile using dynamic flex wrapping.</p>
+      </div>
+      <div class="flex-container reveal-container">
+        <!-- Testimonial Card 1 -->
+        <div class="reveal-card testimonial-card interactive-card card-press">
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">"The Flexbox architecture used here is incredibly fluid. The container-query-like behavior without JS is impressive."</p>
+          <div class="user-profile">
+            <div class="avatar-initials">AS</div>
+            <div class="user-info">
+              <h4>Aanya Sharma</h4>
+              <span>Senior Frontend Lead</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial Card 2 -->
+        <div class="reveal-card testimonial-card interactive-card card-press">
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">"Finally a tutorial that treats CSS like the powerful engine it is. The focus on spacing rhythm is exactly what we need."</p>
+          <div class="user-profile">
+            <div class="avatar-initials">RM</div>
+            <div class="user-info">
+              <h4>Rahul Mehta</h4>
+              <span>Fullstack Architect</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial Card 3 -->
+        <div class="reveal-card testimonial-card interactive-card card-press">
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>✦</span>
+          </div>
+          <p class="testimonial-text">"The transition between mobile and desktop is seamless. This grid-flex hybrid approach is the future of UI design."</p>
+          <div class="user-profile">
+            <div class="avatar-initials">PN</div>
+            <div class="user-info">
+              <h4>Priya Nair</h4>
+              <span>Product Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Section 2: Grid -->
+    <section id="grid">
+      <div class="section-header">
+        <span class="section-tag">// part-b</span>
+        <h2>CSS Grid Gallery</h2>
+        <p>Dashboard-style grid utilizing auto-fit and minmax for autonomous responsive layouts.</p>
+      </div>
+      <div class="grid-container">
+        <!-- Grid Items -->
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">01//ENGINEERING</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">🌐</span>
+            <h3 class="grid-title">Frontend Dev</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">3+ Years</span>
+            <span class="grid-tag">HTML·CSS·JS</span>
+          </div>
+        </div>
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">02//ARCHITECTURE</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">⚙️</span>
+            <h3 class="grid-title">Backend Dev</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">2+ Years</span>
+            <span class="grid-tag">Node·Express·API</span>
+          </div>
+        </div>
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">03//INTELLIGENCE</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">🤖</span>
+            <h3 class="grid-title">AI Integration</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">10+ Projects</span>
+            <span class="grid-tag">Gemini·LLaMA</span>
+          </div>
+        </div>
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">04//INFRASTRUCTURE</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">🗄️</span>
+            <h3 class="grid-title">Databases</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">5+ DBs</span>
+            <span class="grid-tag">Supabase·MongoDB</span>
+          </div>
+        </div>
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">05//SCALABILITY</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">☁️</span>
+            <h3 class="grid-title">Cloud & Deploy</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">Always Live</span>
+            <span class="grid-tag">Vercel·GCloud</span>
+          </div>
+        </div>
+        <div class="grid-card interactive-card card-press">
+          <div class="grid-card-top">
+            <span class="grid-category">06//NATIVE REACH</span>
+          </div>
+          <div class="grid-card-middle">
+            <span class="grid-icon">📱</span>
+            <h3 class="grid-title">Mobile Dev</h3>
+          </div>
+          <div class="grid-card-bottom">
+            <span class="grid-stat">Learning</span>
+            <span class="grid-tag">React Native·Expo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Section 3: Animation -->
+    <section id="animation">
+      <div class="section-header center-align">
+        <span class="section-tag">// part-c</span>
+        <h2>Card Lift Effect</h2>
+        <p class="max-w-md mx-auto">Advanced CSS keyframes combined with cubic-bezier curves for a natural, tactile interface feel.</p>
+      </div>
+      <div class="animation-container reveal-container">
+        <!-- Interactive Cards -->
+        <div class="reveal-card animation-card interactive-card card-press">
+          <span class="hover-label">HOVER ME</span>
+          <div class="icon-wrapper">⚡</div>
+          <h3 class="card-title">High Velocity</h3>
+          <p class="card-desc">Optimized for sub-second rendering and fluid interactions at 60fps.</p>
+        </div>
+        <div class="reveal-card animation-card interactive-card card-press">
+          <span class="hover-label">HOVER ME</span>
+          <div class="icon-wrapper">🔲</div>
+          <h3 class="card-title">Atomic Layers</h3>
+          <p class="card-desc">Structured layering system for predictable z-index and elevation management.</p>
+        </div>
+        <div class="reveal-card animation-card interactive-card card-press">
+          <span class="hover-label">HOVER ME</span>
+          <div class="icon-wrapper">💻</div>
+          <h3 class="card-title">Code Centric</h3>
+          <p class="card-desc">Designed by developers, for developers, with technical precision in mind.</p>
+        </div>
+      </div>
+      <!-- Technical Pills -->
+      <div class="pills-container">
+        <span class="tech-pill">transform</span>
+        <span class="tech-pill">transition</span>
+        <span class="tech-pill">box-shadow</span>
+        <span class="tech-pill">@keyframes</span>
+        <span class="tech-pill">cubic-bezier</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">WEINTERN</a>
+        <div class="footer-info">
+          © 2025 WeIntern CSS Challenge · Week 1 Task 3<br />
+          <span class="opacity-70">Created by Khushi</span>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <a class="footer-link" href="#flexbox">Flexbox</a>
+          <a class="footer-link" href="#grid">Grid</a>
+          <a class="footer-link" href="#animation">Animation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Internship</h4>
+          <span class="footer-text">WeIntern Pvt Ltd</span>
+          <span class="footer-text">Week 1</span>
+          <span class="footer-text">Full Stack Track</span>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a class="footer-link" href="#">GitHub</a>
+          <a class="footer-link" href="#">LinkedIn</a>
+          <a class="footer-link" href="#">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Submission Confirmation Modal Template -->
+  <template id="submission-modal-template">
+    <div id="submission-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+        <div class="modal-content">
+          <!-- 1. Status badge -->
+          <div class="modal-badge-wrapper">
+            <span class="modal-badge">Week 1 · Task 3 · Submitted</span>
+          </div>
+          
+          <!-- 2. Main heading -->
+          <h2 class="modal-heading">Assignment Submitted</h2>
+          
+          <!-- 3. Subtext -->
+          <p class="modal-subtext">Your CSS Challenge has been successfully submitted to WeIntern. Our team will review your implementation shortly.</p>
+          
+          <!-- 4. Divider -->
+          <div class="modal-divider"></div>
+          
+          <!-- 5. Submission details -->
+          <div class="modal-details">
+            <div class="details-row">
+              <span class="details-label">Task</span>
+              <span class="details-value">CSS Challenge — Week 1</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Submitted by</span>
+              <span class="details-value">Khushi</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Status</span>
+              <span class="details-status-pill">Under Review</span>
+            </div>
+          </div>
+          
+          <!-- 6. Bottom divider -->
+          <div class="modal-divider"></div>
+          
+          <!-- 7. Two buttons -->
+          <div class="modal-buttons">
+            <button class="btn-modal-secondary" id="modal-view-btn">View Submission</button>
+            <button class="btn-modal-primary" id="modal-done-btn">Done</button>
+          </div>
+          
+          <!-- 8. Legal note -->
+          <p class="modal-legal">Submitted assignments are reviewed within 2-3 business days.</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
 </body>
 </html>
