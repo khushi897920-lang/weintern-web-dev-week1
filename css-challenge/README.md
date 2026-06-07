@@ -216,7 +216,7 @@ css-challenge/
 | 🎓 Education | BCA Semester IV, MGKVP Varanasi |
 | 💼 Internship | WeIntern Pvt Ltd |
 | 🐙 GitHub | [github.com/khushi897920-lang](https://github.com/khushi897920-lang) |
-| 💼 LinkedIn | [linkedin.com/in/khushi-weintern](https://linkedin.com/in/khushi-weintern) *(placeholder)* |
+| 💼 LinkedIn | [linkedin.com/in/khushii-singh01](https://www.linkedin.com/in/khushii-singh01) |
 
 ---
 
