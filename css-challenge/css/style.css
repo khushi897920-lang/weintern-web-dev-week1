@@ -141,7 +141,7 @@ header nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px var(--spacing-margin-mobile);
+  padding: 24px var(--spacing-margin-mobile);
   border-bottom: 1px solid var(--outline);
   background-color: var(--surface);
   margin-top: 80px; /* Offset for fixed navbar */
@@ -170,14 +170,14 @@ header nav {
 
 /* Section Common Styles */
 section {
-  padding: 48px var(--spacing-gutter);
+  padding: 32px var(--spacing-gutter);
   max-width: var(--container-max);
   margin: 0 auto;
   scroll-margin-top: 80px; /* offset for nav */
 }
 
 .section-header {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .section-header.center-align {
@@ -265,7 +265,7 @@ section {
   line-height: 1.5;
   color: var(--secondary);
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .user-profile {
