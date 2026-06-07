@@ -1,13 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NexaStudio | Precision Engineering for the Digital Realm</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaStudio - Precision Engineering for the Digital Realm. Premium Web Design and Development Studio.">
+  <title>NEXASTUDIO | Precision Engineering for the Digital Realm</title>
+  
+  <!-- Google Fonts: Inter (Global Font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- content coming soon -->
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="logo">
+        <a href="#home">NEXASTUDIO</a>
+      </div>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="hamburger"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" href="#home">WORK</a>
+        <a class="nav-link" href="#services">SERVICES</a>
+        <a class="nav-link" href="#about">AGENCY</a>
+        <a class="nav-link" href="#journal">JOURNAL</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </div>
+      
+      <!-- Navbar CTA -->
+      <div class="nav-cta">
+        <a class="btn btn-outline btn-sm" href="#contact">ESTIMATE</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- Background Image with Grayscale & Brightness styling -->
+      <div class="hero-bg-wrapper">
+        <img class="hero-bg-img" alt="Futuristic Server Room with red optic lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ytoQ9ZKipi_EdBHJjewTmLBqhKfi2-KlFaKhewLV16e-3UkOK-1SdVoIoya5sZeULLsA0-h1FwpjJ_5zc_49vZygo1MJq5pWFoh7kdllOQvoNDRvmpsGHnxAg-aFACfBQB27HtFHk-2zM_6EaJ1Pamxc1fpjiXxBCujkWhBMffMnqF1PSia9_MGwbyMB8DxcrU-_0RF6ZQM7NVfAcxnrpQXEfgaxh4ISWd4IQ-3-yHqZzT4Jr_4Z3USoukDgXAmKb7vTjRtFM58">
+      </div>
+      
+      <div class="hero-content fade-in">
+
+        
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          We Turn Ideas Into <br>Digital Experiences
+        </h1>
+        
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#contact">Start a Project</a>
+          <a class="btn btn-outline" href="#services">View Our Work</a>
+        </div>
+        
+        <!-- Key Metrics / Stats Row -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">12<span class="stat-unit">ms</span></div>
+            <div class="stat-label">Avg. Response</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">99.9<span class="stat-unit">%</span></div>
+            <div class="stat-label">System Uptime</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Animated Scroll Down indicator -->
+      <a class="scroll-down" href="#services" aria-label="Scroll down to services">
+        <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-section fade-in" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-category">Expertise</span>
+            <h2 class="section-title">Core Capabilities</h2>
+          </div>
+          <div class="section-divider"></div>
+        </div>
+        
+        <!-- Services Cards Grid -->
+        <div class="services-grid">
+          <!-- Card 1: UI/UX Design -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="9"></rect>
+                <rect x="14" y="3" width="7" height="5"></rect>
+                <rect x="14" y="12" width="7" height="9"></rect>
+                <rect x="3" y="16" width="7" height="5"></rect>
+              </svg>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">Precision-engineered interfaces that prioritize user intuition and brand narrative.</p>
+          </article>
+          
+          <!-- Card 2: Web Architecture -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Web Architecture</h3>
+            <p class="service-desc">Scalable, performant backend systems built for enterprise-grade digital products.</p>
+          </article>
+          
+          <!-- Card 3: Mobile Solutions -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Mobile Solutions</h3>
+            <p class="service-desc">Native and cross-platform mobile experiences crafted for the modern edge.</p>
+          </article>
+          
+          <!-- Card 4: SEO Performance -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">SEO Performance</h3>
+            <p class="service-desc">Data-driven visibility strategies to dominate competitive search landscapes.</p>
+          </article>
+          
+          <!-- Card 5: Cloud Infrastructure -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Cloud Infrastructure</h3>
+            <p class="service-desc">Robust cloud deployments ensuring zero downtime and global scalability.</p>
+          </article>
+          
+          <!-- Card 6: Advanced Analytics -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Advanced Analytics</h3>
+            <p class="service-desc">Transforming raw user data into actionable business intelligence and growth.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section fade-in" id="about">
+      <div class="container about-grid">
+        <!-- Left Column: Actual Grayscale Architectural Image -->
+        <div class="about-media-wrapper">
+          <div class="about-img-container">
+            <img class="about-img" alt="Minimalist architectural office interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBiuuDJXM4nrJQHGgu6icWihEW9nXWV8bKTs0w0kNbn90g3Rg2zQ2amH71YTVgBui3n8X9uC44veQtfkXK2k5KgLPRieGj0S-5TdxaFX0TOr7modarDog6w5vcqbOAwvjvRJt9lEjehnJDbyn1fBsP6GcNNJeWlGOdmI7t3fL4pWYR0jyBqYSCWDV6Xp-3zbz8HOOak-_H-hrREEWDvJ_hvbs_sVhEjexF5pnglP4xgsU8CmOt5cJsfF2AAbBCfyZMrcTk7zRoTA">
+            <div class="about-img-overlay"></div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Details & Philosophy -->
+        <div class="about-content">
+          <span class="section-category">Our Philosophy</span>
+          <h2 class="about-title">Built by Engineers,<br>Refined by Artists.</h2>
+          <p class="about-desc">
+            At NEXASTUDIO, we reject the notion that technical excellence and aesthetic beauty are separate disciplines. We operate at the intersection of high-performance engineering and cinematic design, crafting digital artifacts that aren't just functional, but evocative.
+          </p>
+          
+          <!-- Details List -->
+          <div class="about-points">
+            <div class="about-point">
+              <span class="point-number">01</span>
+              <div class="point-text">
+                <h4 class="point-title">Technical Rigor</h4>
+                <p class="point-desc">Code that is lean, fast, and resilient by default.</p>
+              </div>
+            </div>
+            
+            <div class="about-point">
+              <span class="point-number">02</span>
+              <div class="point-text">
+                <h4 class="point-title">Aesthetic Precision</h4>
+                <p class="point-desc">Design that commands attention through refined restraint.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Highlight Tags -->
+          <div class="highlight-tags">
+            <span class="tag">Founded 2021</span>
+            <span class="tag">Remote-First</span>
+            <span class="tag">Global Clients</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section fade-in" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="contact-header">
+          <h2 class="contact-title">Initiate Project</h2>
+          <p class="contact-subtitle">Contact our studio to discuss technical requirements and creative goals.</p>
+        </div>
+        
+        <!-- Contact Layout (Form + Side Info) -->
+        <div class="contact-wrapper">
+          <!-- Contact Form -->
+          <form class="contact-form" id="project-form" novalidate>
+            <div class="form-grid">
+              <div class="form-col">
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label class="form-label" for="full-name">FULL NAME</label>
+                  <input class="form-input" id="full-name" name="name" type="text" placeholder="e.g. Alexander Rossi" required>
+                  <span class="error-msg" id="error-name" aria-live="polite"></span>
+                </div>
+                
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label class="form-label" for="email">EMAIL ADDRESS</label>
+                  <input class="form-input" id="email" name="email" type="email" placeholder="alex@nexus.digital" required>
+                  <span class="error-msg" id="error-email" aria-live="polite"></span>
+                </div>
+                
+                <!-- Service Interest -->
+                <div class="form-group">
+                  <label class="form-label" for="service">SERVICE INTEREST</label>
+                  <div class="select-wrapper">
+                    <select class="form-input form-select" id="service" name="service" required>
+                      <option value="" disabled selected>Select a capability...</option>
+                      <option value="ui-ux">UI/UX Design</option>
+                      <option value="web-arch">Web Architecture</option>
+                      <option value="cloud-infra">Cloud Infrastructure</option>
+                      <option value="full-consult">Full Agency Consultation</option>
+                    </select>
+                  </div>
+                  <span class="error-msg" id="error-service" aria-live="polite"></span>
+                </div>
+              </div>
+              
+              <div class="form-col">
+                <!-- Project Brief -->
+                <div class="form-group form-group-textarea">
+                  <label class="form-label" for="brief">PROJECT BRIEF</label>
+                  <textarea class="form-input form-textarea" id="brief" name="brief" rows="5" placeholder="Describe your technical objectives..." required></textarea>
+                  <span class="error-msg" id="error-brief" aria-live="polite"></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-submit-wrapper">
+              <button class="btn btn-solid btn-block btn-lg" type="submit">TRANSMIT INQUIRY</button>
+            </div>
+          </form>
+
+          <!-- Contact Details / Info Rows -->
+          <div class="contact-info">
+            <div class="info-row">
+              <span class="info-icon">📧</span>
+              <a href="mailto:studio@nexastudio.com" class="info-value">studio@nexastudio.com</a>
+              <span class="info-label">Email</span>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">💼</span>
+              <a href="https://linkedin.com/company/nexastudio" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/company/nexastudio</a>
+              <span class="info-label">LinkedIn</span>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🐙</span>
+              <a href="https://github.com/nexastudio" target="_blank" rel="noopener noreferrer" class="info-value">github.com/nexastudio</a>
+              <span class="info-label">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Footer Logo and Copyright -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="#home">NEXASTUDIO</a>
+        </div>
+        <p class="footer-copyright">
+          © 2024 NEXASTUDIO. PRECISION ENGINEERING FOR THE DIGITAL REALM.
+        </p>
+      </div>
+      
+      <!-- Column 1: Capabilities -->
+      <div class="footer-links-col">
+        <h5 class="footer-title">Capabilities</h5>
+        <ul class="footer-links">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Strategy</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Motion</a></li>
+        </ul>
+      </div>
+      
+      <!-- Column 2: Studio -->
+      <div class="footer-links-col">
+        <h5 class="footer-title">Studio</h5>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      
+      <!-- Column 3: Legal -->
+      <div class="footer-links-col">
+        <h5 class="footer-title">Legal</h5>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="https://linkedin.com/company/nexastudio" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Execution -->
   <script src="js/script.js"></script>
 </body>
 </html>
