@@ -135,13 +135,13 @@ header nav {
 
 /* ── HERO ── */
 .hero {
-  min-height: 400px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--spacing-stack-xl) var(--spacing-margin-mobile);
+  padding: 40px var(--spacing-margin-mobile);
   border-bottom: 1px solid var(--outline);
   background-color: var(--surface);
   margin-top: 80px; /* Offset for fixed navbar */
@@ -170,14 +170,14 @@ header nav {
 
 /* Section Common Styles */
 section {
-  padding: var(--spacing-stack-xl) var(--spacing-gutter);
+  padding: 48px var(--spacing-gutter);
   max-width: var(--container-max);
   margin: 0 auto;
   scroll-margin-top: 80px; /* offset for nav */
 }
 
 .section-header {
-  margin-bottom: var(--spacing-stack-xl);
+  margin-bottom: 32px;
 }
 
 .section-header.center-align {
@@ -657,11 +657,11 @@ footer {
 
   /* Section Padding */
   section {
-    padding: 40px var(--spacing-margin-mobile);
+    padding: 32px var(--spacing-margin-mobile);
   }
 
   .hero {
-    padding: 48px var(--spacing-margin-mobile);
+    padding: 32px var(--spacing-margin-mobile);
   }
   
   .hero h1 {
