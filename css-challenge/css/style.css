@@ -170,7 +170,10 @@ header nav {
 
 /* Section Common Styles */
 section {
-  padding: 32px var(--spacing-gutter);
+  padding-top: 32px;
+  padding-bottom: 120px;
+  padding-left: var(--spacing-gutter);
+  padding-right: var(--spacing-gutter);
   max-width: var(--container-max);
   margin: 0 auto;
   scroll-margin-top: 80px; /* offset for nav */
