@@ -18,7 +18,21 @@
 |---|------|-------------|-----------|--------|
 | 1 | Portfolio Website | Personal portfolio with 4 pages | [Link](#) | 🚧 |
 | 2 | Business Landing Page | NexaStudio fictional agency page | [Link](#) | 🚧 |
-| 3 | CSS Challenge | Flexbox + Grid + Animations | [Link](#) | 🚧 |
+| 3 | CSS Challenge | Flexbox + Grid + Animations | [Link](https://css-challenge-lake.vercel.app) | 🚧 |
+
+---
+
+## 🔗 Live Demo & Screenshots (CSS Challenge)
+
+🔗 **Live Demo:** [Click here to view the live project](https://css-challenge-lake.vercel.app)
+
+| Desktop View | Mobile View |
+|---|---|
+| ![Desktop](/css-challenge/screenshots/flex-desktop.png) | ![Mobile](/css-challenge/screenshots/flex-mobile.png) |
+
+| Grid Layout | Animation Demo |
+|---|---|
+| ![Grid](/css-challenge/screenshots/grid-layout.png) | ![Animation](/css-challenge/screenshots/animation-demo.png) |
 
 ---
 

@@ -15,11 +15,11 @@ A pixel-perfect, highly premium CSS challenge built with pure HTML, CSS & JavaSc
 
 | Desktop View | Mobile View |
 |---|---|
-| ![Desktop](screenshots/flex-desktop.png) | ![Mobile](screenshots/flex-mobile.png) |
+| ![Desktop](/css-challenge/screenshots/flex-desktop.png) | ![Mobile](/css-challenge/screenshots/flex-mobile.png) |
 
 | Grid Layout | Animation Demo |
 |---|---|
-| ![Grid](screenshots/grid-layout.png) | ![Animation](screenshots/animation-demo.png) |
+| ![Grid](/css-challenge/screenshots/grid-layout.png) | ![Animation](/css-challenge/screenshots/animation-demo.png) |
 
 ---
 
