@@ -1,13 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khushi | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css"/>
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Khushi Singh | Full Stack Developer & AI Explorer</title>
+<meta name="description" content="Khushi Singh — Full Stack Developer & AI Explorer. BCA student at Shree Harishchandra PG College, Varanasi, building intelligent digital products."/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#695f02","surface-tint": "#b2244f","on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#400014","on-primary": "#ffffff","tertiary-fixed": "#f2e580",
+                        "error": "#ba1a1a","inverse-primary": "#ffb2be","surface-dim": "#edd4d7",
+                        "on-primary-fixed-variant": "#900038","error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffaeda","surface": "#fff8f7","inverse-on-surface": "#ffecee",
+                        "secondary": "#993c76","on-error": "#ffffff","surface-container-low": "#fff0f1",
+                        "outline": "#8c7074","on-primary-container": "#fff1f1","on-surface-variant": "#584144",
+                        "on-secondary-fixed": "#3c002a","primary-fixed-dim": "#ffb2be",
+                        "on-error-container": "#93000a","outline-variant": "#dfbec2","on-surface": "#25181a",
+                        "tertiary-fixed-dim": "#d5c867","on-tertiary-fixed": "#201c00",
+                        "on-secondary-container": "#7a215c","primary": "#a71b48","primary-container": "#c9375f",
+                        "surface-container-highest": "#f6dce0","on-background": "#25181a",
+                        "tertiary-container": "#b9ad4f","background": "#fff8f7","surface-container": "#ffe9eb",
+                        "secondary-container": "#fd8fcf","on-secondary-fixed-variant": "#7c235d",
+                        "surface-container-lowest": "#ffffff","secondary-fixed": "#ffd8ea",
+                        "surface-variant": "#f6dce0","primary-fixed": "#ffd9de","on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4f4800","surface-container-high": "#fce2e5",
+                        "surface-bright": "#fff8f7","inverse-surface": "#3c2c2f","on-tertiary-container": "#474000"
+                    },
+                    "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+                    "spacing": {"margin-mobile": "16px","base": "8px","container-max": "1280px","gutter": "24px","margin-desktop": "64px"},
+                    "fontFamily": {
+                        "headline-xl": ["Noto Serif"],"label-md": ["Plus Jakarta Sans"],"label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],"body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Noto Serif"],"headline-lg": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px","letterSpacing": "0.05em","fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px","fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px","fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px","fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px","fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+</script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        body { background-color: #fff8f7; scroll-behavior: smooth; min-height: max(884px, 100dvh); }
+        .editorial-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+        .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal-on-scroll.visible { opacity: 1; transform: translateY(0); }
+</style>
 </head>
-<body>
-  <!-- content coming soon -->
-  <script src="js/script.js"></script>
-</body>
-</html>
+<body class="font-body-md text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tighter text-primary dark:text-primary-fixed-dim">Khushi Singh</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-label-md text-label-md" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-label-md text-label-md" href="projects.html">Projects</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all" href="contact.html">Contact</a>
+</div>
+<button class="md:hidden p-2 text-primary" id="mobile-menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="fixed inset-y-0 left-0 z-[60] w-72 bg-surface dark:bg-surface-dim shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden" id="mobile-drawer">
+<div class="p-6 flex flex-col h-full">
+<div class="mb-12">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Khushi Singh</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-surface-container-high rounded-full transition-all" href="about.html">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">About</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-surface-container-high rounded-full transition-all" href="projects.html">
+<span class="material-symbols-outlined">work</span>
+<span class="font-label-md text-label-md">Projects</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-surface-container-high rounded-full transition-all" href="contact.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact</span>
+</a>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 bg-black/20 backdrop-blur-sm z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+
+<main class="pt-24">
+
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-8 reveal-on-scroll">
+<div class="space-y-4">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em]">Full Stack Developer & AI Explorer</span>
+<h1 class="font-headline-xl text-[42px] leading-tight md:text-headline-xl text-on-surface max-w-2xl">
+Full Stack Developer &amp; <span class="text-primary italic">AI Explorer</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+Building intelligent digital products that bridge modern web development and artificial intelligence. I am a BCA student passionate about creating AI-powered solutions that solve meaningful real-world problems.
+</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg hover:bg-primary-container transition-all" href="projects.html">View My Work</a>
+<a class="border border-primary text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-primary/5 transition-all" href="khushi%20singh%20resume.pdf" download="Khushi_Singh_Resume.pdf">Download Resume</a>
+</div>
+</div>
+<div class="flex-1 w-full max-w-md reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-fixed-dim/20 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high aspect-square">
+<!-- HOME PAGE HERO IMAGE — DO NOT CHANGE -->
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="A professional close-up portrait of a developer with a confident yet approachable expression, editorial style with warm pink tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCohAtmhxYW4v6eSO9tD5tJ-VXmjNHIQ68CFTPF3C8-k3Z_rxF-zr-c4aSiieZzVmFRPUN1dP8GqNulpSZ7dggjp_1ERiGrYR9HvN4EvJvxtyo5C-Em9YOc8Qy7LlhOEEMUsQ92C3o4w_j5lpEB-PTAi5DlJWbx2U89ZcN74ZD0FnWW7Ol6s624qk1eJA1ALkvwMEhqzMjI5IcCblKEigYl1idB65kPQCByCEXA64jNnIMy4DuAsz2FKTdTBOqKfu8sOJ15yK67uSFLIrA">
+</div>
+<div class="absolute -bottom-6 -right-6 bg-tertiary-container text-on-tertiary-container p-6 rounded-xl shadow-lg hidden md:block">
+<span class="font-headline-lg block font-bold">2</span>
+<span class="font-label-sm">Active Internships</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Stats/Brief -->
+<section class="bg-surface-container-low py-12 md:py-20 border-y border-outline-variant/20 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+<div class="space-y-2">
+<p class="font-label-md text-label-md text-primary">Education</p>
+<p class="font-headline-lg text-headline-lg">BCA Student</p>
+</div>
+<div class="w-px h-12 bg-outline-variant hidden md:block"></div>
+<div class="space-y-2">
+<p class="font-label-md text-label-md text-primary">Current Focus</p>
+<p class="font-headline-lg text-headline-lg">Web Dev + AI</p>
+</div>
+<div class="w-px h-12 bg-outline-variant hidden md:block"></div>
+<div class="space-y-2">
+<p class="font-label-md text-label-md text-primary">Achievement</p>
+<p class="font-headline-lg text-headline-lg">Top 100 — Elite Her Hackathon</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Technical Arsenal (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<div class="text-center mb-16 space-y-4 reveal-on-scroll">
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Technical Arsenal</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A curated selection of technologies and methodologies I employ to deliver high-performance digital products.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px] reveal-on-scroll">
+<!-- Frontend -->
+<div class="md:col-span-2 bg-white rounded-xl p-8 border border-outline-variant/10 hover:border-primary/30 transition-all group flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-size: 32px;">palette</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-2">Frontend Development</h3>
+<p class="text-on-surface-variant mb-6">Crafting responsive, accessible interfaces with modern web technologies and pixel-perfect attention to detail.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container rounded-full text-label-sm">React</span>
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container rounded-full text-label-sm">JavaScript</span>
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container rounded-full text-label-sm">Tailwind CSS</span>
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container rounded-full text-label-sm">HTML & CSS</span>
+</div>
+</div>
+<!-- Backend -->
+<div class="md:col-span-2 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-white/80 mb-4 block" style="font-size: 32px;">database</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-2">Backend & APIs</h3>
+<p class="text-on-primary/80 mb-6">Building robust server-side solutions with Node.js, Express, and SQL databases powering real-world applications.</p>
+</div>
+<div class="flex flex-wrap gap-2 relative z-10">
+<span class="px-3 py-1 bg-white/20 rounded-full text-label-sm">Node.js</span>
+<span class="px-3 py-1 bg-white/20 rounded-full text-label-sm">Express.js</span>
+<span class="px-3 py-1 bg-white/20 rounded-full text-label-sm">REST APIs</span>
+<span class="px-3 py-1 bg-white/20 rounded-full text-label-sm">SQL</span>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-10 scale-150 rotate-12">
+<span class="material-symbols-outlined text-[120px]">architecture</span>
+</div>
+</div>
+<!-- Languages -->
+<div class="md:col-span-1 bg-surface-container-high rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary mb-4 block" style="font-size: 32px;">code</span>
+<h4 class="font-label-md text-label-md font-bold mb-2">Languages</h4>
+</div>
+<ul class="text-label-sm text-on-surface-variant space-y-2">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>Java</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>JavaScript</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>C & Python</li>
+</ul>
+</div>
+<!-- AI/Learning -->
+<div class="md:col-span-1 bg-tertiary-container/30 rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 block" style="font-size: 32px;">psychology</span>
+<h4 class="font-label-md text-label-md font-bold mb-2">Currently Learning</h4>
+</div>
+<p class="text-label-sm text-on-tertiary-container leading-relaxed italic">"Exploring Artificial Intelligence, Machine Learning & System Design — because the future is intelligent."</p>
+</div>
+<!-- Projects Link -->
+<div class="md:col-span-2 bg-secondary-fixed text-on-secondary-fixed rounded-xl p-8 flex items-center justify-between group cursor-pointer overflow-hidden relative" onclick="window.location='projects.html'">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Explore Projects</h3>
+<p class="font-label-sm opacity-80">HerCycle AI · Pollutree · FullPrep</p>
+</div>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2" style="font-size: 48px;">arrow_forward_ios</span>
+<div class="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-secondary/10 to-transparent"></div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 reveal-on-scroll">
+<div class="bg-surface-container rounded-3xl p-12 md:p-24 flex flex-col items-center text-center space-y-8 border border-outline-variant/30">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Let's Build Something Meaningful</span>
+<h2 class="font-headline-xl text-[36px] md:text-headline-xl text-on-surface max-w-2xl">
+Ready to collaborate on something impactful?
+</h2>
+<div class="flex flex-col md:flex-row gap-6">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-xl font-headline-lg text-headline-lg-mobile flex items-center gap-3 hover:scale-105 transition-transform" href="contact.html">
+Get In Touch
+<span class="material-symbols-outlined">send</span>
+</a>
+<a class="bg-white border border-outline-variant text-on-surface px-10 py-5 rounded-xl font-headline-lg text-headline-lg-mobile flex items-center gap-3 hover:bg-surface-container-low transition-all" href="about.html">
+Learn About Me
+<span class="material-symbols-outlined">person</span>
+</a>
+</div>
+<div class="pt-8 flex flex-wrap justify-center gap-8">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">check_circle</span>
+Open to Internships
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">check_circle</span>
+Open Source Contributor — GSSoC'26
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest border-t border-outline-variant/20 w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Khushi Singh</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-left">
+© 2026 Khushi Singh. Full Stack Developer & AI Explorer.
+</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all font-label-sm text-label-sm" href="https://github.com/khushi897920-lang" target="_blank">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all font-label-sm text-label-sm" href="https://www.linkedin.com/in/khushii-singh01" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all font-label-sm text-label-sm" href="mailto:khushi897920@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+
+<script>
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, observerOptions);
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+
+        const toggle = document.getElementById('mobile-menu-toggle');
+        const drawer = document.getElementById('mobile-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        function toggleDrawer() {
+            drawer.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+            setTimeout(() => overlay.classList.toggle('opacity-0'), 10);
+        }
+        toggle.addEventListener('click', toggleDrawer);
+        overlay.addEventListener('click', toggleDrawer);
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) nav.classList.add('shadow-sm');
+            else nav.classList.remove('shadow-sm');
+        });
+</script>
+</body></html>

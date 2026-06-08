@@ -1,13 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khushi | About</title>
-  <link rel="stylesheet" href="css/style.css"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About | Khushi Singh — Full Stack Developer & AI Explorer</title>
+<meta name="description" content="About Khushi Singh — BCA student at Shree Harishchandra PG College, Varanasi. Full Stack Developer & AI Explorer building intelligent digital products."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "tertiary": "#695f02","surface-tint": "#b2244f","on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#400014","on-primary": "#ffffff","tertiary-fixed": "#f2e580",
+                    "error": "#ba1a1a","inverse-primary": "#ffb2be","surface-dim": "#edd4d7",
+                    "on-primary-fixed-variant": "#900038","error-container": "#ffdad6","secondary-fixed-dim": "#ffaeda",
+                    "surface": "#fff8f7","inverse-on-surface": "#ffecee","secondary": "#993c76",
+                    "on-error": "#ffffff","surface-container-low": "#fff0f1","outline": "#8c7074",
+                    "on-primary-container": "#fff1f1","on-surface-variant": "#584144","on-secondary-fixed": "#3c002a",
+                    "primary-fixed-dim": "#ffb2be","on-error-container": "#93000a","outline-variant": "#dfbec2",
+                    "on-surface": "#25181a","tertiary-fixed-dim": "#d5c867","on-tertiary-fixed": "#201c00",
+                    "on-secondary-container": "#7a215c","primary": "#a71b48","primary-container": "#c9375f",
+                    "surface-container-highest": "#f6dce0","on-background": "#25181a","tertiary-container": "#b9ad4f",
+                    "background": "#fff8f7","surface-container": "#ffe9eb","secondary-container": "#fd8fcf",
+                    "on-secondary-fixed-variant": "#7c235d","surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffd8ea","surface-variant": "#f6dce0","primary-fixed": "#ffd9de",
+                    "on-secondary": "#ffffff","on-tertiary-fixed-variant": "#4f4800","surface-container-high": "#fce2e5",
+                    "surface-bright": "#fff8f7","inverse-surface": "#3c2c2f","on-tertiary-container": "#474000"
+                },
+                "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+                "spacing": {"margin-mobile": "16px","base": "8px","container-max": "1280px","gutter": "24px","margin-desktop": "64px"},
+                "fontFamily": {
+                    "headline-xl": ["Noto Serif"],"label-md": ["Plus Jakarta Sans"],"label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],"body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Noto Serif"],"headline-lg": ["Noto Serif"]
+                },
+                "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px","letterSpacing": "0.05em","fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px","fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px","fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px","fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px","fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "600"}]
+                }
+            },
+        },
+    }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #fff8f7; }
+    ::-webkit-scrollbar-thumb { background: #dfbec2; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #8c7074; }
+    body { min-height: max(884px, 100dvh); }
+</style>
 </head>
-<body>
-  <!-- content coming soon -->
-  <script src="js/script.js"></script>
-</body>
-</html>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tighter text-primary">Khushi Singh</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary" href="about.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<a class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:opacity-90 transition-all" href="contact.html">Contact</a>
+</div>
+</header>
+
+<main class="pt-24 pb-20">
+
+<!-- Hero / Header Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-9">
+<h1 class="font-headline-xl text-[40px] md:text-[56px] font-[800] tracking-[-0.03em] leading-[1.05] text-on-surface mb-6">
+Defining technical excellence<br class="hidden md:inline"> through <span class="text-primary italic font-[800]">AI-driven innovation.</span>
+</h1>
+<p class="text-[16px] md:text-[18px] font-medium leading-[1.8] text-on-surface/85 max-w-prose">
+A deep dive into the journey of Khushi Singh — from academic foundations at Shree Harishchandra PG College to building impactful full-stack and AI-powered products.
+</p>
+</div>
+</section>
+
+<!-- The Story Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Khushi Singh — Full Stack Developer & AI Explorer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyIrZvAepuqgFc4V36P8qh1M0iSZlSdb85R4R7GE8wtQUCApMKe9stVlM672OGdZPRFGLkcWqMuAQV2OPeY0knZJW_1eF8GaxwY7E9a6-gxbDKHMZyxRKXkld3w7X7JB3vmY3UgSpLKL6wxsJ17w4TXZSo1KKj3J5G-nrUv7OIPYL4Aza8EEs2KDZLxARUyMo0aMVUMWYo4PCgUDjeS-hyfiyqD2dWSDo2Rsw-ebsIf4wbnwYqzkMOedvoPe66HHnYfAP0ueq85VL1">
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-container rounded-xl flex items-center justify-center text-on-primary-container p-6 shadow-xl hidden md:flex">
+<span class="font-headline-lg italic text-4xl">KS</span>
+</div>
+</div>
+<div class="md:col-span-6 mt-12 md:mt-0">
+<div class="mb-4 flex items-center gap-2">
+<div class="h-px w-8 bg-primary/80"></div>
+<span class="text-[13px] font-[500] tracking-[0.18em] text-primary/85 uppercase">My Journey</span>
+</div>
+<h2 class="font-headline-lg text-[28px] md:text-[36px] font-[700] tracking-[-0.02em] leading-[1.1] text-on-surface mb-6">Architecting Intelligent Solutions.</h2>
+<div class="space-y-6 text-on-surface/85 max-w-prose text-[16px] md:text-[18px] leading-[1.75]">
+<p>
+I am currently pursuing a Bachelor of Computer Applications at <span class="font-semibold text-on-surface">Shree Harishchandra PG College, Varanasi</span>, with an expected graduation year of 2027 and a current CGPA of 7.25.
+</p>
+<p>
+My interest in technology started with a desire to understand how software is built. Through web development, I discovered the ability to create products that people actually use and benefit from.
+</p>
+<p>
+As I continue my journey as a developer, my growing interest in Artificial Intelligence and Machine Learning motivates me to build intelligent, scalable, and impactful solutions that address real-world challenges. I believe the future belongs to developers who can combine strong engineering fundamentals with AI-driven innovation.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Professional Trajectory (Timeline) -->
+<section class="bg-surface-container-low py-24 mb-32 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16">
+<span class="text-[13px] font-[500] tracking-[0.18em] text-primary/85 uppercase block mb-2">Education & Experience</span>
+<h2 class="font-headline-lg text-[32px] md:text-[42px] font-[800] tracking-[-0.03em] leading-[1.05] text-on-surface">Professional Trajectory.</h2>
+</div>
+<div class="relative">
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant/30 transform md:-translate-x-1/2"></div>
+<div class="space-y-16">
+
+<!-- Education -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+<span class="bg-primary-fixed text-on-primary-fixed px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3 inline-block">2024 – 2027</span>
+<h3 class="text-[22px] md:text-[26px] font-[700] tracking-[-0.01em] text-on-surface mb-2">Shree Harishchandra PG College</h3>
+<p class="font-label-md text-primary font-semibold mb-3">Bachelor of Computer Applications (BCA)</p>
+<p class="text-[14px] md:text-[16px] leading-[1.7] text-on-surface/80 max-w-md ml-auto">Building strong foundations in programming, databases, web technologies, and software engineering principles. Current CGPA: 7.25.</p>
+</div>
+<div class="absolute left-[-4px] md:left-1/2 md:-translate-x-1/2 w-2 h-2 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="md:w-1/2"></div>
+</div>
+
+<!-- Enginow -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2"></div>
+<div class="absolute left-[-4px] md:left-1/2 md:-translate-x-1/2 w-2 h-2 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="md:w-1/2 md:pl-12">
+<span class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3 inline-block">May 2026 – Present</span>
+<h3 class="text-[22px] md:text-[26px] font-[700] tracking-[-0.01em] text-on-surface mb-2">Enginow</h3>
+<p class="font-label-md text-primary font-semibold mb-3">Full Stack Developer Trainee</p>
+<p class="text-[14px] md:text-[16px] leading-[1.7] text-on-surface/80 max-w-md">Working on full-stack projects, collaborating with cross-functional teams, and gaining hands-on experience in end-to-end software development.</p>
+</div>
+</div>
+
+<!-- WeIntern -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+<span class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3 inline-block">June 2026 – Present</span>
+<h3 class="text-[22px] md:text-[26px] font-[700] tracking-[-0.01em] text-on-surface mb-2">WeIntern</h3>
+<p class="font-label-md text-primary font-semibold mb-3">Web Development Intern</p>
+<p class="text-[14px] md:text-[16px] leading-[1.7] text-on-surface/80 max-w-md ml-auto">Strengthening frontend development, teamwork, responsive design implementation, and problem-solving through industry-level projects.</p>
+</div>
+<div class="absolute left-[-4px] md:left-1/2 md:-translate-x-1/2 w-2 h-2 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="md:w-1/2"></div>
+</div>
+
+<!-- GSSoC -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2"></div>
+<div class="absolute left-[-4px] md:left-1/2 md:-translate-x-1/2 w-2 h-2 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="md:w-1/2 md:pl-12">
+<span class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3 inline-block">2026</span>
+<h3 class="text-[22px] md:text-[26px] font-[700] tracking-[-0.01em] text-on-surface mb-2">GirlScript Summer of Code</h3>
+<p class="font-label-md text-primary font-semibold mb-3">Open Source Contributor — GSSoC'26</p>
+<p class="text-[14px] md:text-[16px] leading-[1.7] text-on-surface/80 max-w-md">Contributing to impactful open-source projects, implementing features, and collaborating with a global developer community.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Stack Manifest (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-[13px] font-[500] tracking-[0.18em] text-primary/85 uppercase block mb-2">Manifesto</span>
+<h2 class="font-headline-lg text-[32px] md:text-[42px] font-[800] tracking-[-0.03em] leading-[1.05] text-on-surface">Stack Manifest.</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">A curated selection of technologies I leverage to build robust, scalable digital ecosystems.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:auto-rows-[205px]">
+
+<!-- Frontend Stack -->
+<div class="md:row-span-2 bg-surface-container p-8 md:p-10 rounded-xl border border-outline-variant/10 flex flex-col justify-between hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">javascript</span>
+<div>
+<h4 class="text-[20px] md:text-[24px] font-[700] tracking-[-0.01em] leading-[1.2] text-on-surface mb-2">Frontend Stack</h4>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface-variant">React · Tailwind CSS · JavaScript</p>
+</div>
+</div>
+
+<!-- Programming Languages -->
+<div class="bg-surface-container p-6 md:p-8 rounded-xl border border-outline-variant/10 flex flex-col justify-between hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">code</span>
+<div>
+<h4 class="text-[20px] md:text-[24px] font-[700] tracking-[-0.01em] leading-[1.2] text-on-surface mb-2">Programming Languages</h4>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface-variant">Java · C · JS · Python (Learning)</p>
+</div>
+</div>
+
+<!-- Developer Tools -->
+<div class="bg-surface-container p-6 md:p-8 rounded-xl border border-outline-variant/10 flex flex-col justify-between hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">construction</span>
+<div>
+<h4 class="text-[20px] md:text-[24px] font-[700] tracking-[-0.01em] leading-[1.2] text-on-surface mb-2">Developer Tools</h4>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface-variant">Git · GitHub · VS Code · Postman · Vercel</p>
+</div>
+</div>
+
+<!-- Backend & Data -->
+<div class="md:row-span-2 bg-primary p-8 md:p-10 rounded-xl flex flex-col justify-between text-on-primary hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-4xl">database</span>
+<div>
+<h4 class="text-[20px] md:text-[24px] font-[700] tracking-[-0.01em] leading-[1.2] text-on-primary mb-2">Backend & Data</h4>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-primary/90">Node.js · Express · SQL</p>
+</div>
+</div>
+
+<!-- AI & Learning Path -->
+<div class="md:col-span-2 bg-surface-container-high p-8 md:p-10 rounded-xl border border-outline-variant/10 flex items-center justify-between group hover:bg-surface-container-highest transition-colors">
+<div>
+<h4 class="text-[20px] md:text-[24px] font-[700] tracking-[-0.01em] leading-[1.2] text-on-surface mb-2">AI & Learning Path</h4>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface-variant">AI · ML · System Design · Advanced React</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-primary group-hover:translate-x-2 transition-transform">psychology</span>
+</div>
+
+</div>
+</section>
+
+<!-- Achievements Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="mb-12">
+<span class="text-[13px] font-[500] tracking-[0.18em] text-primary/85 uppercase block mb-2">Recognition</span>
+<h2 class="font-headline-lg text-[32px] md:text-[42px] font-[800] tracking-[-0.03em] leading-[1.05] text-on-surface">Achievements.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+
+<!-- Top 100 Finalist -->
+<div class="bg-white rounded-xl p-6 md:p-8 border border-outline-variant/10 flex items-start gap-4 md:gap-6 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+<span class="material-symbols-outlined text-primary text-[24px]">emoji_events</span>
+</div>
+<div class="relative z-10">
+<h4 class="text-[18px] md:text-[22px] font-[700] tracking-[-0.01em] text-on-surface mb-1 pr-12">Top 100 Finalist</h4>
+<p class="text-[16px] font-[500] text-primary mb-2">Elite Her Hackathon</p>
+<p class="text-[14px] md:text-[16px] leading-[1.6] text-on-surface-variant max-w-[80%]">Recognised among the top 100 finalists nationwide for building HerCycle AI — a women's health platform.</p>
+</div>
+<div class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-primary/10 text-[48px]">emoji_events</span>
+</div>
+</div>
+
+<!-- Open Source Contributor -->
+<div class="bg-white rounded-xl p-6 md:p-8 border border-outline-variant/10 flex items-start gap-4 md:gap-6 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+<span class="material-symbols-outlined text-primary text-[24px]">code</span>
+</div>
+<div class="relative z-10">
+<h4 class="text-[18px] md:text-[22px] font-[700] tracking-[-0.01em] text-on-surface mb-1 pr-12">Open Source Contributor</h4>
+<p class="text-[16px] font-[500] text-primary mb-2">GirlScript Summer of Code 2026</p>
+<p class="text-[14px] md:text-[16px] leading-[1.6] text-on-surface-variant max-w-[80%]">Actively contributing to open-source repositories, implementing features, and collaborating globally.</p>
+</div>
+<div class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-primary/10 text-[48px]">terminal</span>
+</div>
+</div>
+
+<!-- Sigma 9.0 -->
+<div class="bg-white rounded-xl p-6 md:p-8 border border-outline-variant/10 flex items-start gap-4 md:gap-6 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+</div>
+<div class="relative z-10">
+<h4 class="text-[18px] md:text-[22px] font-[700] tracking-[-0.01em] text-on-surface mb-1 pr-12">Sigma 9.0</h4>
+<p class="text-[16px] font-[500] text-primary mb-2">Full Stack Development & DSA</p>
+<p class="text-[14px] md:text-[16px] leading-[1.6] text-on-surface-variant max-w-[80%]">Completed rigorous training in full-stack development and data structures & algorithms.</p>
+</div>
+<div class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-primary/10 text-[48px]">school</span>
+</div>
+</div>
+
+<!-- Continuous Learning -->
+<div class="bg-white rounded-xl p-6 md:p-8 border border-outline-variant/10 flex items-start gap-4 md:gap-6 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+<span class="material-symbols-outlined text-primary text-[24px]">auto_awesome</span>
+</div>
+<div class="relative z-10">
+<h4 class="text-[18px] md:text-[22px] font-[700] tracking-[-0.01em] text-on-surface mb-1 pr-12">Continuous Learning</h4>
+<p class="text-[16px] font-[500] text-primary mb-2">AI for Everyone · Web Development Fundamentals</p>
+<p class="text-[14px] md:text-[16px] leading-[1.6] text-on-surface-variant max-w-[80%]">Pursuing certifications in AI and foundational web development to stay at the forefront of technology.</p>
+</div>
+<div class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-primary/10 text-[48px]">auto_awesome</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Values Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 border-l border-outline-variant/30">
+<h3 class="text-[14px] font-[700] tracking-wider uppercase text-primary mb-3">01. Precision</h3>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface/80">I treat code as craft — structured, meaningful, and built with intent at every step.</p>
+</div>
+<div class="p-8 border-l border-outline-variant/30">
+<h3 class="text-[14px] font-[700] tracking-wider uppercase text-primary mb-3">02. Innovation</h3>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface/80">The intersection of web development and AI is where I create the most impactful solutions.</p>
+</div>
+<div class="p-8 border-l border-outline-variant/30">
+<h3 class="text-[14px] font-[700] tracking-wider uppercase text-primary mb-3">03. Empathy</h3>
+<p class="text-[15px] md:text-[16px] leading-[1.7] text-on-surface/80">Technology should empower people. I build with the end-user's real needs and delight in mind.</p>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Khushi Singh</span>
+<p class="font-body-md text-on-surface-variant max-w-xs">© 2026 Khushi Singh. Full Stack Developer & AI Explorer.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="https://github.com/khushi897920-lang" target="_blank">GitHub</a>
+<a class="font-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="https://www.linkedin.com/in/khushii-singh01" target="_blank">LinkedIn</a>
+<a class="font-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="mailto:khushi897920@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+
+<script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+        observer.observe(section);
+    });
+</script>
+</body></html>

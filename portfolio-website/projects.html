@@ -1,13 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khushi | Projects</title>
-  <link rel="stylesheet" href="css/style.css"/>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Khushi Singh — Featured Projects</title>
+<meta name="description" content="Khushi Singh's projects — HerCycle AI, Pollutree Monitor, FullPrep Platform. Full Stack Developer & AI Explorer."/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+            "tertiary": "#695f02","surface-tint": "#b2244f","on-tertiary": "#ffffff",
+            "on-primary-fixed": "#400014","on-primary": "#ffffff","tertiary-fixed": "#f2e580",
+            "error": "#ba1a1a","inverse-primary": "#ffb2be","surface-dim": "#edd4d7",
+            "on-primary-fixed-variant": "#900038","error-container": "#ffdad6","secondary-fixed-dim": "#ffaeda",
+            "surface": "#fff8f7","inverse-on-surface": "#ffecee","secondary": "#993c76",
+            "on-error": "#ffffff","surface-container-low": "#fff0f1","outline": "#8c7074",
+            "on-primary-container": "#fff1f1","on-surface-variant": "#584144","on-secondary-fixed": "#3c002a",
+            "primary-fixed-dim": "#ffb2be","on-error-container": "#93000a","outline-variant": "#dfbec2",
+            "on-surface": "#25181a","tertiary-fixed-dim": "#d5c867","on-tertiary-fixed": "#201c00",
+            "on-secondary-container": "#7a215c","primary": "#a71b48","primary-container": "#c9375f",
+            "surface-container-highest": "#f6dce0","on-background": "#25181a","tertiary-container": "#b9ad4f",
+            "background": "#fff8f7","surface-container": "#ffe9eb","secondary-container": "#fd8fcf",
+            "on-secondary-fixed-variant": "#7c235d","surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#ffd8ea","surface-variant": "#f6dce0","primary-fixed": "#ffd9de",
+            "on-secondary": "#ffffff","on-tertiary-fixed-variant": "#4f4800","surface-container-high": "#fce2e5",
+            "surface-bright": "#fff8f7","inverse-surface": "#3c2c2f","on-tertiary-container": "#474000"
+        },
+        "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+        "spacing": {"margin-mobile": "16px","base": "8px","container-max": "1280px","gutter": "24px","margin-desktop": "64px"},
+        "fontFamily": {
+            "headline-xl": ["Noto Serif"],"label-md": ["Plus Jakarta Sans"],"label-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],"body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Noto Serif"],"headline-lg": ["Noto Serif"]
+        },
+        "fontSize": {
+            "headline-xl": ["48px", {"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "700"}],
+            "label-md": ["14px", {"lineHeight": "20px","letterSpacing": "0.05em","fontWeight": "600"}],
+            "label-sm": ["12px", {"lineHeight": "16px","fontWeight": "500"}],
+            "body-md": ["16px", {"lineHeight": "24px","fontWeight": "400"}],
+            "body-lg": ["18px", {"lineHeight": "28px","fontWeight": "400"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px","fontWeight": "600"}],
+            "headline-lg": ["32px", {"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "600"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    body { background-color: #fff8f7; color: #25181a; -webkit-font-smoothing: antialiased; min-height: max(884px, 100dvh); }
+    .asymmetric-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+    .editorial-shadow { box-shadow: 0 4px 30px rgba(167, 27, 72, 0.04); }
+</style>
 </head>
-<body>
-  <!-- content coming soon -->
-  <script src="js/script.js"></script>
-</body>
-</html>
+<body class="font-body-md text-body-md overflow-x-hidden">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-4 md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tighter text-primary">Khushi Singh</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary" href="projects.html">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<a class="bg-primary hover:bg-primary-container text-white px-6 py-2 rounded-lg font-label-md transition-all duration-300" href="contact.html">Contact</a>
+</div>
+</header>
+
+<main class="pt-32 pb-24 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl mb-6 text-on-surface">Featured Projects</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+A collection of projects demonstrating my passion for full stack development, artificial intelligence, and real-world problem solving. Each project reflects a commitment to building meaningful, impactful solutions.
+</p>
+</div>
+</section>
+
+<!-- Projects Bento Grid -->
+<div class="asymmetric-grid">
+
+<!-- PROJECT 1: HerCycle AI (Featured Large) -->
+<div class="col-span-12 lg:col-span-8 group relative bg-surface-container-low rounded-xl overflow-hidden editorial-shadow border border-outline-variant/20 transition-all duration-500 hover:scale-[1.01]">
+<div class="aspect-[16/9] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="HerCycle AI — AI-powered women's health platform with cycle tracking and PCOD risk assessment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbcqqb1OXXsI4W2eKrrHP84caIlAq379ROIj0juS1NwI4OhZwq6Bt49YcC6aT5ImrsgPu_MKN0otCSQNIGSEk105VUFybu33zjJl4y9ebUHU-Llt4nfGhiFctH4i6rw9ApxvthYXZ8r5pbxDJgh75yvjDI5hbCBRampIzxvw1JPPNxiZBlnFzvNOJV1HAddGfB50_PBfCEsc0zPYYWQq5NJjW5jlBNWGoJZt28sJdBwwIxFuRcxRR1bFCVlvU-BNQvL4E7VWtlFInt"/>
+</div>
+<div class="p-8 md:p-12">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-4 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm border border-primary/10 uppercase tracking-widest">AI</span>
+<span class="px-4 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm border border-secondary/10 uppercase tracking-widest">Healthcare</span>
+<span class="px-4 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm border border-tertiary/10 uppercase tracking-widest">Full Stack</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg mb-4">HerCycle AI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xl">
+An AI-powered women's health platform providing cycle tracking, PCOD risk assessment, intelligent health insights, multilingual accessibility, and personalised recommendations powered by Gemini AI.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Next.js</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Supabase</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">PostgreSQL</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Gemini AI</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">React</span>
+</div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>AI Health Assistant</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>PCOD Risk Assessment</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>Cycle Prediction</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>Multilingual Support</span>
+</div>
+<div class="mb-8">
+<a class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-label-md hover:bg-primary-container transition-all shadow-md shadow-primary/10" href="https://github.com/khushi897920-lang/hercycle-ai" target="_blank">
+View on GitHub
+<span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-on-surface-variant italic">Role: Sole Builder & Project Lead</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full font-label-sm text-label-sm border border-primary/20">Top 100 — Elite Her Hackathon</span>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 2: FullPrep Platform -->
+<div class="col-span-12 lg:col-span-4 group bg-surface-container-high rounded-xl overflow-hidden editorial-shadow border border-outline-variant/20 transition-all duration-500 hover:scale-[1.01]">
+<div class="aspect-square overflow-hidden bg-inverse-surface flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-75 group-hover:opacity-95 transition-all duration-700 group-hover:scale-105" alt="FullPrep Platform" src="images/fullprep.png"/>
+</div>
+<div class="p-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm border border-secondary/10 uppercase tracking-widest">EdTech</span>
+<span class="px-3 py-1 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm border border-primary/10 uppercase tracking-widest animate-pulse">In Progress</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-3">FullPrep Platform</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+A competitive programming platform with coding challenges, analytics dashboards, authentication, progress tracking, and modern learning experiences powered by Monaco Editor.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-2 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Next.js</span>
+<span class="px-2 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">TypeScript</span>
+<span class="px-2 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">MongoDB</span>
+<span class="px-2 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Monaco Editor</span>
+</div>
+<span class="font-label-sm text-on-surface-variant italic">Role: Frontend Developer</span>
+</div>
+</div>
+
+<!-- PROJECT 3: Pollutree Monitor (Wide) -->
+<div class="col-span-12 mt-8 md:mt-12 group bg-white rounded-xl overflow-hidden editorial-shadow border border-outline-variant/20 transition-all duration-500 hover:scale-[1.005]">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-4 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm border border-tertiary/10 uppercase tracking-widest">AI</span>
+<span class="px-4 py-1 rounded-full bg-secondary-container/10 text-secondary font-label-sm text-label-sm border border-secondary/10 uppercase tracking-widest">IoT</span>
+<span class="px-4 py-1 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm border border-primary/10 uppercase tracking-widest">Sustainability</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl mb-6">Pollutree Monitor</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 max-w-lg leading-relaxed">
+An AI-powered hyperlocal air quality intelligence platform combining IoT sensors, real-time AQI monitoring, Gemini AI health advisories, and environmental analytics for Indian cities.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Next.js</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Supabase</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Gemini AI</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">Leaflet.js</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-sm text-on-surface-variant border border-outline-variant/20">ESP32</span>
+</div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>Real-Time AQI</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>Ward-Level Heatmaps</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>AI Chatbot</span>
+<span class="flex items-center gap-1 text-label-sm text-primary"><span class="material-symbols-outlined" style="font-size:16px;">check_circle</span>ESP32 Sensor Integration</span>
+</div>
+<a class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-label-md hover:bg-primary-container transition-all shadow-md shadow-primary/10" href="https://github.com/khushi897920-lang/pollutree-monitor" target="_blank">
+View on GitHub
+<span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="md:w-1/2 aspect-video md:aspect-auto min-h-[400px] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Pollutree Monitor — IoT air quality monitoring dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNkX9etWXw2qB4NhFg7dRQ32jI8j_qthdTgKR_fAylg7nIoClbPswxogtoSja-o-lk7XzmAU4aEjQGQ653Ki7NVGtVrbvZHmpMVaqIVadbgJvd_8uzbKfSwNG2YgX1h17tEVk07jX4QlR6FTF4APcQGxEWkcNoMJiRgeeTKmhLoTzYxQ6X9j6fulI3xZc8CGAZtTsc_A6o_i2oIgc0i-DIlUBvyYPhu-28nTcWDCh8BxRgBVZcIrRvHR396KU1OZEgPZagEQPW6snW"/>
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-4 md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Khushi Singh</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-left opacity-80">
+© 2026 Khushi Singh. Full Stack Developer & AI Explorer.
+</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="https://github.com/khushi897920-lang" target="_blank">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="https://www.linkedin.com/in/khushii-singh01" target="_blank">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-primary/30 transition-all" href="mailto:khushi897920@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+
+<!-- Mobile Navigation (Floating Bottom) -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-6 py-4 bg-surface/90 backdrop-blur-xl rounded-full shadow-2xl border border-outline-variant/20 flex gap-8 items-center">
+<a class="flex flex-col items-center gap-1 group" href="index.html">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">home</span>
+<span class="font-label-sm text-xs text-on-surface-variant group-hover:text-primary">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="projects.html">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-label-sm text-xs text-primary font-bold">Projects</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="about.html">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">person</span>
+<span class="font-label-sm text-xs text-on-surface-variant group-hover:text-primary">About</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="contact.html">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">mail</span>
+<span class="font-label-sm text-xs text-on-surface-variant group-hover:text-primary">Contact</span>
+</a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.asymmetric-grid > div');
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+        cards.forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(card);
+        });
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('py-2', 'shadow-sm');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2', 'shadow-sm');
+            }
+        });
+    });
+</script>
+</body></html>

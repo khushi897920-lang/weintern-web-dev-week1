@@ -196,7 +196,7 @@ css-challenge/
 ## 💼 Internship Context
 
 * **Organization:** WeIntern Pvt Ltd
-* **Program:** Summer Internship Program 2025
+* **Program:** Summer Internship Program 2026
 * **Track:** Full Stack Web Development
 * **Week 1 Task 3:** CSS Layout & Animation Challenge
 * **Evaluation Criteria:**
@@ -213,7 +213,7 @@ css-challenge/
 | Field | Detail |
 |---|---|
 | 👩💻 Developer | Khushi |
-| 🎓 Education | BCA Semester IV, MGKVP Varanasi |
+| 🎓 Education | BCA Semester IV, HCPG Varanasi |
 | 💼 Internship | WeIntern Pvt Ltd |
 | 🐙 GitHub | [github.com/khushi897920-lang](https://github.com/khushi897920-lang) |
 | 💼 LinkedIn | [linkedin.com/in/khushii-singh01](https://www.linkedin.com/in/khushii-singh01) |

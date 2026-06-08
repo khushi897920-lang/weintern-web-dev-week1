@@ -129,7 +129,7 @@ business-landing-page/
 ## 💼 Internship Context
 
 - **Organization:** WeIntern Pvt Ltd
-- **Program:** Summer Internship Program 2025
+- **Program:** Summer Internship Program 2026
 - **Track:** Full Stack Web Development
 - **Week 1 Task 2:** Responsive Business Landing Page
 - **Submission includes:** GitHub repo + live link + screenshots + README
