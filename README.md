@@ -93,9 +93,13 @@ A **4-page personal portfolio** built from scratch using semantic HTML5 and resp
 |:---:|:---:|
 | ![Desktop](/portfolio-website/screenshots/portfolio-home-desktop.png) | ![Mobile](/portfolio-website/screenshots/portfolio-home-mobile.jpeg) |
 
-| Projects Grid | Contact Form |
+| About Page | Projects Page |
 |:---:|:---:|
-| ![Projects](/portfolio-website/screenshots/portfolio-projects.png) | ![Contact](/portfolio-website/screenshots/portfolio-contact.png) |
+| ![About](/portfolio-website/screenshots/portfolio-about.png) | ![Projects](/portfolio-website/screenshots/portfolio-projects.png) |
+
+| Contact Page |
+|:---:|
+| ![Contact](/portfolio-website/screenshots/portfolio-contact.png) |
 
 ---
 
