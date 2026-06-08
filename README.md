@@ -217,7 +217,7 @@ open index.html
 | # | Task | Status | Live Demo |
 |---|------|--------|-----------|
 | 1 | 🧑🎨 Portfolio Website | ✅ Deployed | [View Live →](https://khushi897920-portfolio.vercel.app) |
-| 2 | 🏢 NexaStudio Landing Page | 🚧 In Progress | — |
+| 2 | 🏢 NexaStudio Landing Page | ✅ Deployed | [View Live →](https://business-landing-page-lovat.vercel.app/) |
 | 3 | 🎨 CSS Challenge | ✅ Deployed | [View Live →](https://css-challenge-lake.vercel.app) |
 
 ---
