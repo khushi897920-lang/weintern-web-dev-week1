@@ -144,7 +144,7 @@ business-landing-page/
 | 🎓 Education | BCA Semester IV, HCPG Varanasi |
 | 💼 Internship | WeIntern Pvt Ltd |
 | 🐙 GitHub | [github.com/khushi897920-lang](https://github.com/khushi897920-lang) |
-| 💼 LinkedIn | [linkedin.com/in/khushi-897920](https://linkedin.com/in/khushi-897920) |
+| 💼 LinkedIn | [linkedin.com/in/khushii-singh01](https://www.linkedin.com/in/khushii-singh01) |
 
 ---
 
