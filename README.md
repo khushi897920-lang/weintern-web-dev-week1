@@ -71,6 +71,8 @@ weintern-web-dev-week1/
 
 > *A digital identity. Not a template — a statement.*
 
+🔗 **Live Demo:** [khushi897920-portfolio.vercel.app](https://khushi897920-portfolio.vercel.app)
+
 A **4-page personal portfolio** built from scratch using semantic HTML5 and responsive CSS. Every section, every spacing decision, every hover state — intentional.
 
 | Page | What It Does |
@@ -87,11 +89,21 @@ A **4-page personal portfolio** built from scratch using semantic HTML5 and resp
 - ✅ CSS custom properties for consistent theming
 - ✅ Form validation in Vanilla JS — no libraries
 
+| Home Page (Desktop) | Mobile View |
+|:---:|:---:|
+| ![Desktop](/portfolio-website/screenshots/portfolio-home-desktop.png) | ![Mobile](/portfolio-website/screenshots/portfolio-home-mobile.jpeg) |
+
+| Projects Grid | Contact Form |
+|:---:|:---:|
+| ![Projects](/portfolio-website/screenshots/portfolio-projects.png) | ![Contact](/portfolio-website/screenshots/portfolio-contact.png) |
+
 ---
 
 ### Task 2 — Business Landing Page: NexaStudio
 
 > *A fictional creative agency that feels very, very real.*
+
+🔗 **Live Demo:** [business-landing-page-lovat.vercel.app](https://business-landing-page-lovat.vercel.app)
 
 **NexaStudio** is a modern digital agency landing page designed to convert visitors. Think bold typography, a clean grid, and a CTA you *want* to click. Built to showcase production-level UI with zero external dependencies.
 
@@ -109,6 +121,14 @@ A **4-page personal portfolio** built from scratch using semantic HTML5 and resp
 - ✅ Scroll-triggered reveal animations (IntersectionObserver API)
 - ✅ Consistent brand color palette via CSS variables
 - ✅ Cross-browser tested
+
+| Desktop View | Mobile View |
+|:---:|:---:|
+| ![Desktop](/business-landing-page/screenshots/landing-desktop.png) | ![Mobile](/business-landing-page/screenshots/landing-hero-mobile.png) |
+
+| Services Section | Contact Form |
+|:---:|:---:|
+| ![Services](/business-landing-page/screenshots/landing-services.png) | ![Contact](/business-landing-page/screenshots/landing-contact-form.png) |
 
 ---
 

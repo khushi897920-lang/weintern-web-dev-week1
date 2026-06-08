@@ -115,11 +115,11 @@ open index.html
 
 | Home Page (Desktop) | Mobile View |
 |:---:|:---:|
-| ![Desktop](/portfolio-website/screenshots/desktop-preview.png) | ![Mobile](/portfolio-website/screenshots/mobile-preview.png) |
+| ![Desktop](/portfolio-website/screenshots/portfolio-home-desktop.png) | ![Mobile](/portfolio-website/screenshots/portfolio-home-mobile.jpeg) |
 
 | Projects Grid | Contact Form |
 |:---:|:---:|
-| ![Projects](/portfolio-website/screenshots/projects-preview.png) | ![Contact](/portfolio-website/screenshots/contact-preview.png) |
+| ![Projects](/portfolio-website/screenshots/portfolio-projects.png) | ![Contact](/portfolio-website/screenshots/portfolio-contact.png) |
 
 ---
 
