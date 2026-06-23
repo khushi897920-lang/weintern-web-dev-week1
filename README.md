@@ -232,7 +232,7 @@ open index.html
 | **University** | HCPG Varanasi |
 | **Program** | BCA — Semester IV |
 | **Internship** | WeIntern Pvt Ltd · Summer 2026 |
-| **GitHub** | [khushi897920-lang](https://github.com/khushi897920-lang) |
+| **Linkedin** | [Khushi Singh](https://www.linkedin.com/in/khushii-singh01/) |
 | **Track** | Full Stack Web Development |
 
 </div>
