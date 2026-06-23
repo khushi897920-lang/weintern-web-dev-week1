@@ -31,7 +31,6 @@
 **Organization:** WeIntern Pvt Ltd  
 **Program:** Summer Internship 2026 — Full Stack Web Development Track  
 **Intern:** Khushi · BCA Semester IV · HCPG Varanasi  
-**GitHub:** [khushi897920-lang](https://github.com/khushi897920-lang)
 
 Week 1 is about proving the fundamentals aren't boring — they're a *foundation*. Three tasks, one pure tech stack: **HTML5 · CSS3 · Vanilla JS**. No frameworks. No shortcuts. Just clean code that works.
 
